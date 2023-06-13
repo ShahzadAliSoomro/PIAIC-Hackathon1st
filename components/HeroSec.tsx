@@ -37,14 +37,14 @@ export default function HeroSec() {
                 Start Shopping
               </button>
               </div>
-              <div className="flex w-full gap-20 pt-24">
+              <div className="flex w-full gap-20 pt-24 flex-wrap lg:flex-nowrap">
                 
             <Image 
             src='/images/featured1.png'
             alt="feature"
             width={500}
             height={500}
-            
+            // className="w-44"
             />
             
              <Image 
@@ -73,7 +73,7 @@ export default function HeroSec() {
         <div className="flex items-center justify-center w-full h-full lg:w-1/2">
             <div className="relative bg-[#FFECE3] lg:p-72 mr-14 rounded-full"></div>
           <img
-            className="absolute object-cover mx-auto rounded-md "
+            className="absolute object-cover mx-auto rounded-md  "
             src="/images/header.png"
             alt="glasses photo"
           />
