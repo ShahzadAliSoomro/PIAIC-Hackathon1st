@@ -3,6 +3,7 @@ import Product_Slider from '@/components/Product_Slider'
 import Promotion from '@/components/Promotion'
 import Image from 'next/image'
 import ProContent from '@/components/ProContent'
+import Newsletter from '@/components/Newsletter'
 
 export default function Home() {
   return (
@@ -11,6 +12,9 @@ export default function Home() {
       <Promotion />
       <div className='pt-32'>
       <ProContent />
+      </div>
+      <div className='pt-32'>
+        <Newsletter />
       </div>
       {/* <Product_Slider /> */}
       {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
