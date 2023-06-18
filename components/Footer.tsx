@@ -88,7 +88,7 @@ export default function Footer() {
           </div>
          
           <div className="w-full border-b pt-10 border-black"></div>
-           <div className="flex justify-between pt-5">
+           <div className="flex justify-between space-y-4 lg:space-y-0 pt-5 flex-wrap lg:flex-nowrap">
           <p className=" text-lg text-gray-800">Copyright © 2022 Dine Market</p>
           <p className=" text-lg text-gray-800">Design by. <a href="#" className="font-bold text-black">Weird Design Studio</a></p>
           <p className=" text-lg text-gray-800">Code by. 
