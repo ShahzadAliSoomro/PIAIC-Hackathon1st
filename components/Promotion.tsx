@@ -47,7 +47,7 @@ export default function Promotion() {
        </div>
        {/* <div className="w-full lg:w-7/12 space-x-4 flex flex-wrap lg:flex-nowrap"> */}
        
-       <div className="w-full lg:w-2/12 px-7 pt-3 lg:pt-0">
+       <div className="w-full lg:w-2/12 px-7 lg:px-0 pt-3 lg:pt-0">
         <div className="bg-[#EFE1C7] text-gray-700">
             <div className="flex flex-col p-1">
                 <p>Flex Sweatshirt</p>
@@ -67,7 +67,7 @@ export default function Promotion() {
             </div>
         </div>
        </div>
-       <div className="w-full lg:w-2/12 px-7 pt-3 lg:pt-0">
+       <div className="w-full lg:w-2/12 px-7 lg:px-0 pt-3 lg:pt-0">
        <div className="bg-[#D7D7D9] text-gray-700 ">
             <div className="flex flex-col px-1">
                 <p>Flex Push Button Bomber</p>

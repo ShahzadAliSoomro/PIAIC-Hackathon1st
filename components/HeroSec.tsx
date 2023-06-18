@@ -38,7 +38,7 @@ export default function HeroSec() {
               </button>
               </div>
               <div className="grid w-full pt-24  ">
-                <div className="grid grid-cols-2 lg:grid gap-20">
+                <div className="grid grid-cols-2 lg:flex gap-20">
                 
             <Image 
             src='/images/featured1.png'
