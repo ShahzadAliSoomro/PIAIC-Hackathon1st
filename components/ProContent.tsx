@@ -36,11 +36,10 @@ export default function ProContent() {
                 <h4 className='text-black text-lg font-bold'>Discount for Bulk Orders</h4>
                 <p className='text-gray-700 w-60 text-lg'>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
                 </div>
-
                 </div>
             </div>
             <div className='w-full lg:w-6/12 flex'>
-                <div className='flex justify-center items-center gap-5 flex-wrap'>
+                <div className='flex justify-center items-center gap-5 flex-wrap lg:flex-nowrap'>
                     <div className='w-full'>
                         <Image src="/images/featureunique.png" width={500} height={500} alt='uniqueimage'
                         className='w-full'/>
