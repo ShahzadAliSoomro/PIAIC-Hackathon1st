@@ -2,7 +2,7 @@ import React from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import CardPro from "./CardPro";
 import Link from "next/link";
-import Female from "@/app/carddata/female";
+import Female from "@/app/female/page";
 import NextLink from 'next/link';
 
 
@@ -25,7 +25,9 @@ export default function Navbar() {
               data-collapse-toggle="navbar-search"
               aria-controls="navbar-search"
               aria-expanded="false"
-              className="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
+              className="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 
+              dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 
+              dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
             >
               <svg
                 className="w-5 h-5"
@@ -63,7 +65,9 @@ export default function Navbar() {
                 <input
                   type="text"
                   id="search-navbar"
-                  className="block w-full px-24 pl-8 -py-4 text-gray-800 border border-gray-300 rounded-lg dark:border-gray-200 dark:placeholder-gray-400 text-sm dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="block w-full px-24 pl-8 -py-4 text-gray-800 border border-gray-300 
+                  rounded-lg dark:border-gray-200 dark:placeholder-gray-400 text-sm 
+                  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Search..."
                 />
                 <FiShoppingCart className="w-10 h-10 text-gray-800 cursor-pointer" />
@@ -72,7 +76,9 @@ export default function Navbar() {
             <button
               data-collapse-toggle="navbar-search"
               type="button"
-              className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden 
+              hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 
+              dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-search"
               aria-expanded="false"
             >
@@ -115,14 +121,17 @@ export default function Navbar() {
               <input
                 type="text"
                 id="search-navbar"
-                className="block w-full p-2 pl-10 text-sm text-gray-800 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="block w-full p-2 pl-10 text-sm text-gray-800 border border-gray-300 
+                rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 
+                dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Search..."
               />
             </div>
-            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg bg-[#FFFFFF] md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg bg-[#FFFFFF] 
+            md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
               <li>
                 <Link
-                  href="/components/Navbar"
+                  href="/female"
                   className="block py-2 pl-3 pr-4 text-gray-800  rounded md:bg-transparent md:p-0 "
                   aria-current="page"
                 >
@@ -130,28 +139,31 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  "
+                <Link
+                  href="/male"
+                  className="block py-2 pl-3 pr-4 text-gray-800 rounded hover:bg-gray-100 
+                  md:hover:bg-transparent  md:p-0  "
                 >
                   Male
-                </a>
+                </Link>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  "
+                  href="/layout"
+                  className="block py-2 pl-3 pr-4 text-gray-800 rounded hover:bg-gray-100 
+                  md:hover:bg-transparent  md:p-0  "
                 >
                   Kids
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  "
+                <Link
+                  href="/allproduct"
+                  className="block py-2 pl-3 pr-4 text-gray-800 rounded hover:bg-gray-100 
+                  md:hover:bg-transparent  md:p-0  "
                 >
                   All Products
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
