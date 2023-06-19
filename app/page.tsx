@@ -1,15 +1,17 @@
-import HeroSec from '@/components/HeroSec'
-import Product_Slider from '@/components/Product_Slider' 
-import Promotion from '@/components/Promotion'
+import HeroSec from '@/app/components/HeroSec'
+import Product_Slider from '@/app/components/Product_Slider' 
+import Promotion from '@/app/components/Promotion'
 import Image from 'next/image'
-import ProContent from '@/components/ProContent'
-import Newsletter from '@/components/Newsletter'
+import ProContent from '@/app/components/ProContent'
+import Newsletter from '@/app/components/Newsletter'
 import Female from './carddata/female'
 import MalePro from './carddata/malepro'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <main className="bg-[#ffff] w-full">
+      <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className='text-blue-600'>youtube</Link>
       <HeroSec />
       <Promotion />
       <div className='pt-32'>
@@ -18,9 +20,9 @@ export default function Home() {
       <div className='pt-32'>
         <Newsletter />
       </div>
-      <div className='pt-32'>
+      {/* <div className='pt-32'>
         <Female />
-      </div>
+      </div> */}
       <div className='pt-32'>
         <MalePro />
       </div>
