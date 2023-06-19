@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-export default function Female() {
+export default function AllPro() {
   const [card, setCard] = useState(false);
 
   const CardArray = [
@@ -69,6 +69,20 @@ export default function Female() {
       title: "Jackets",
       price: "$225"
     },
+    {
+        id: 10,
+        image: "/images/allpro8.png",
+        mantitle: "Flex Push Button Bomber",
+        title: "Jackets",
+        price: "$225"
+      },
+      {
+        id: 11,
+        image: "/images/allpro11.png",
+        mantitle: "Raglan Sweatshirt",
+        title: "Sweater",
+        price: "$195"
+      },
   ];
 
 
@@ -78,25 +92,25 @@ export default function Female() {
         <section className="min-h-screen body-font text-gray-600 ">
           <div className="container mx-auto px-5 py-10">
             <div className="-m-4 flex flex-wrap ">
-              {CardArray.map((card) => (
+              {CardArray.map((allCard) => (
                 <div className="w-full p-4 md:w-1/2 lg:w-1/4 px-5 lg:px-16 ">
                 <a className="relative block overflow-hidden rounded ">
                   <Image
                     alt="ecommerce"
                     className="block h-full w-full object-cover object-center cursor-pointer"
-                    src={card.image}
+                    src={allCard.image}
                     width={421}
                     height={261}
                   />
                 </a>
                 <div className="mt-4">
                   <h3 className="title-font text-lg font-bold text-gray-900 ">
-                    {card.mantitle}
+                    {allCard.mantitle}
                   </h3>
                   <h2 className="title-font mb-1 text-base font-bold tracking-widest text-gray-400">
-                    {card.title}
+                    {allCard.title}
                   </h2>
-                  <p className="mt-1 text-lg font-bold text-gray-900">{card.price}</p>
+                  <p className="mt-1 text-lg font-bold text-gray-900">{allCard.price}</p>
                 </div>
               </div>
               ))}
