@@ -4,6 +4,7 @@ import Promotion from '@/components/Promotion'
 import Image from 'next/image'
 import ProContent from '@/components/ProContent'
 import Newsletter from '@/components/Newsletter'
+import Female from './carddata/female'
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
       </div>
       <div className='pt-32'>
         <Newsletter />
+      </div>
+      <div className='pt-32'>
+        <Female />
       </div>
       {/* <Product_Slider /> */}
       {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">

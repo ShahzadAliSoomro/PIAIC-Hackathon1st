@@ -2,6 +2,7 @@ import React from 'react'
 import { FiShoppingCart } from "react-icons/fi";
 import CardPro from './CardPro';
 import Link from 'next/link';
+import Female from '@/app/carddata/female';
 
 
 export default function Navbar() {
@@ -44,7 +45,7 @@ export default function Navbar() {
       </div>
       <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg bg-[#FFFFFF] md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
         <li>
-          <Link href="/female" className="block py-2 pl-3 pr-4 text-gray-800  rounded md:bg-transparent md:p-0 " aria-current="page">Female</Link>
+          <Link href="../app/carddata/female" className="block py-2 pl-3 pr-4 text-gray-800  rounded md:bg-transparent md:p-0 " aria-current="page">Female</Link>
         </li>
         <li>
           <a href="#" className="block py-2 pl-3 pr-4 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  ">Male</a>
