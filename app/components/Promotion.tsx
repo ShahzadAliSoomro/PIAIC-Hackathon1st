@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Promotion() {
   return (
-    <div className="w-full bg-[#ffff] space-y-10 flex-wrap lg:flex-nowrap">
+    <div className="w-full mx-auto bg-[#ffff] space-y-10 flex-wrap lg:flex-nowrap">
       <div className="flex flex-col justify-center items-center space-y-5">
         <p className="text-sm font-semibold text-blue-600 pt-10">PROMOTIONS</p>
 
@@ -12,7 +12,7 @@ export default function Promotion() {
           Our Promotions Events
         </div>
       </div>
-      <div className="w-full container mx-auto pb-5 flex flex-wrap space-x-2 lg:flex-nowrap">
+      <div className="container pb-5 flex flex-wrap space-x-2 lg:flex-nowrap">
        <div className="w-full lg:w-8/12 px-8">
         <div className="flex flex-col space-y-3">
         <div className="flex justify-between items-center bg-[#D6D6D8] px-10 flex-wrap lg:flex-nowrap">

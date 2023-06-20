@@ -8,9 +8,9 @@ import NextLink from 'next/link';
 
 export default function Navbar() {
   return (
-    <div>
+    
       <nav className="bg-[#FFFFFF] ">
-        <div className="container flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className=" container flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="/" className="flex items-center">
             <img
               src="/images/Logo.webp"
@@ -169,6 +169,6 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-    </div>
+    
   );
 }
