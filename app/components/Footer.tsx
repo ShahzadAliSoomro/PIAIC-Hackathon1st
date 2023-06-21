@@ -62,7 +62,6 @@ export default function Footer() {
                   <a className="hover:opacity-75"> Support Carrer </a>
                   <a className="hover:opacity-75"> 24h Service </a>
                   <a className="hover:opacity-75"> Quick </a>
-                  
                 </nav>
               </div>
               <div>
@@ -70,55 +69,34 @@ export default function Footer() {
                 <nav className="flex flex-col mt-4 space-y-2 text-lg text-gray-500">
                   <a className="hover:opacity-75"> Whatsapp </a>
                   <a className="hover:opacity-75"> Support 24h </a>
-                  
                 </nav>
               </div>
-              {/* <div>
-          <p className="font-medium">
-            Legal
-          </p>
-          <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-            <a className="hover:opacity-75" > Privacy Policy </a>
-            <a className="hover:opacity-75" > Terms &amp; Conditions </a>
-            <a className="hover:opacity-75" > Returns Policy </a>
-            <a className="hover:opacity-75" > Accessibility </a>
-          </nav>
-        </div> */}
             </div>
           </div>
-         
+
           <div className="w-full border-b pt-10 border-black"></div>
-           <div className="flex justify-between space-y-4 lg:space-y-0 pt-5 flex-wrap lg:flex-nowrap">
-          <p className=" text-lg text-gray-800">Copyright © 2022 Dine Market</p>
-          <p className=" text-lg text-gray-800">Design by. <a href="#" className="font-bold text-black">Weird Design Studio</a></p>
-          <p className=" text-lg text-gray-800">Code by. 
-          <a href="#" className="font-bold text-black">shabrina12 on github</a></p>
+          <div className="flex justify-between space-y-4 lg:space-y-0 pt-5 flex-wrap lg:flex-nowrap">
+            <p className=" text-lg text-gray-800">
+              Copyright © 2023 Dine Market
+            </p>
+            <p className=" text-lg text-gray-800">
+              Design by.{" "}
+              <a href="#" className="font-bold text-black">
+                Weird Design Studio
+              </a>
+            </p>
+            <p className=" text-lg text-gray-800">
+              Code by.
+              <a
+                href="https://github.com/ShahzadAliSoomro/PIAIC-Hackathon1st"
+                className="font-bold text-black"
+              >
+                ShahzadAliSoomro on github
+              </a>
+            </p>
           </div>
         </div>
       </footer>
-      {/* <div className='container mx-auto flex bg-[#ffff]'>
-        <div className='w-full lg:w-4/12'>
-          <div className='flex flex-col space-y-7'>
-             <Image src="/images/Logo.webp" width={500} height={500} alt='logo' className='w-44'/>
-             <p className='text-gray-700 text-lg '>Small, artisan label that offers a thoughtfully curated collection of high
-               quality everyday essentials made.</p>
-               <div className='flex gap-4 text-black'>
-                <div className='bg-[#F1F1F1]'>
-                  <AiOutlineTwitter className='w-8 h-8'/>
-                </div>
-                <div className='bg-[#F1F1F1]'>
-                  <FaFacebookF className='w-8 h-8'/>
-                </div>
-                <div className='bg-[#F1F1F1]'>
-                <svg stroke="currentColor" className='w-8 h-8' fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M22.0367422,22 L17.8848745,22 L17.8848745,15.5036305 C17.8848745,13.9543347 17.85863,11.9615082 15.7275829,11.9615082 C13.5676669,11.9615082 13.237862,13.6498994 13.237862,15.3925291 L13.237862,22 L9.0903683,22 L9.0903683,8.64071385 L13.0707725,8.64071385 L13.0707725,10.4673257 L13.1276354,10.4673257 C13.6813927,9.41667396 15.0356049,8.3091593 17.0555507,8.3091593 C21.2599073,8.3091593 22.0367422,11.0753215 22.0367422,14.6734319 L22.0367422,22 Z M4.40923804,6.81585163 C3.07514653,6.81585163 2,5.73720584 2,4.40748841 C2,3.07864579 3.07514653,2 4.40923804,2 C5.73720584,2 6.81585163,3.07864579 6.81585163,4.40748841 C6.81585163,5.73720584 5.73720584,6.81585163 4.40923804,6.81585163 L4.40923804,6.81585163 Z M6.48604672,22 L2.32980492,22 L2.32980492,8.64071385 L6.48604672,8.64071385 L6.48604672,22 Z"></path></svg>
-                </div>
-               </div>
-          </div>
-        </div>
-        <div className='w-full lg:w-2/12'></div>
-        <div className='w-full lg:w-2/12'></div>
-        <div className='w-full lg:w-2/12'></div>
-      </div> */}
     </div>
   );
 }
