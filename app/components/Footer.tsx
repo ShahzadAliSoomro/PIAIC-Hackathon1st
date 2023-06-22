@@ -5,10 +5,10 @@ import { FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className=" bg-[#ffff] p-5">
-      <footer className="">
-        <div className="w-full container px-4 py-16 mx-auto sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+    <div className=" bg-[#ffff] ">
+      <footer className="pt-24">
+        <div className="w-full px-4 py-16 mx-auto sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 container">
             <div className="space-y-10">
               <img
                 src="/images/Logo.webp"
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
 
           <div className="w-full border-b pt-10 border-black"></div>
-          <div className="flex justify-between space-y-4 lg:space-y-0 pt-5 flex-wrap lg:flex-nowrap">
+          <div className="flex container justify-between space-y-4 lg:space-y-0 pt-5 flex-wrap lg:flex-nowrap">
             <p className=" text-lg text-gray-800">
               Copyright © 2023 Dine Market
             </p>
