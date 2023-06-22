@@ -74,7 +74,7 @@ export default function HeroSec() {
 
         <div className="flex items-center justify-center w-full h-full lg:w-1/2">
             <div className="relative bg-[#FFECE3] lg:p-72 mr-14 rounded-full"></div>
-          <img
+          <Image
             className="absolute object-cover mx-auto rounded-md hidden lg:inline-block "
             src="/images/header.png"
             alt="glasses photo"

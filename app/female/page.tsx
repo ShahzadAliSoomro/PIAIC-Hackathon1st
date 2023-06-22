@@ -79,7 +79,7 @@ export default function Female() {
           <div className="container mx-auto px-5 py-10">
             <div className="-m-4 flex flex-wrap">
               {CardArray.map((card) => (
-                <div className="w-full p-4 md:w-1/2 lg:w-1/4 px-5 lg:px-16 ">
+                <div key={card.id} className="w-full p-4 md:w-1/2 lg:w-1/4 px-5 lg:px-16 ">
                 <a className="relative block overflow-hidden rounded ">
                   <Image
                     alt="ecommerce"

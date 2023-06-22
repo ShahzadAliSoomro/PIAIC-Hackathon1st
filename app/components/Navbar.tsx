@@ -2,10 +2,9 @@
 import React, { useState } from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import { TbNumber0 } from "react-icons/tb";
-import CardPro from "./CardPro";
 import Link from "next/link";
-import Female from "@/app/female/page";
-import NextLink from 'next/link';
+import Image from "next/image";
+
 
 
 export default function Navbar() {
@@ -15,7 +14,7 @@ export default function Navbar() {
       <nav className="bg-[#FFFFFF] ">
         <div className=" container flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="/" className="flex items-center">
-            <img
+            <Image
               src="/images/Logo.webp"
               className="h-8 mr-3 bg-white"
               alt=" Logo"
