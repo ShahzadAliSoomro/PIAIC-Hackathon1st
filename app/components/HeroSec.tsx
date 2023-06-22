@@ -37,7 +37,7 @@ export default function HeroSec() {
                 Start Shopping
               </button>
               </div>
-              <div className="grid w-full pt-24  ">
+              {/* <div className="grid w-full pt-24  ">
                 <div className="grid grid-cols-2 lg:flex gap-20">
                 
             <Image 
@@ -67,7 +67,7 @@ export default function HeroSec() {
             height={500}
             />
             </div>
-          </div>
+          </div> */}
           </div>
           
         </div>
