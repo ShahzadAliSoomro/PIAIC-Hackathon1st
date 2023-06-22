@@ -1,5 +1,7 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { FiShoppingCart } from "react-icons/fi";
+import { TbNumber0 } from "react-icons/tb";
 import CardPro from "./CardPro";
 import Link from "next/link";
 import Female from "@/app/female/page";
@@ -7,6 +9,7 @@ import NextLink from 'next/link';
 
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
   return (
     
       <nav className="bg-[#FFFFFF] ">
@@ -21,6 +24,7 @@ export default function Navbar() {
           </a>
           <div className="flex md:order-2">
             <button
+
               type="button"
               data-collapse-toggle="navbar-search"
               aria-controls="navbar-search"
@@ -68,15 +72,19 @@ export default function Navbar() {
                   className="block w-full px-24 pl-8 -py-4 text-gray-800 border border-gray-300 
                   rounded-lg dark:border-gray-200 dark:placeholder-gray-400 text-sm 
                   dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Search..."
+                  placeholder="What you looking for"
                 />
-                <FiShoppingCart className="w-10 h-10 text-gray-800 cursor-pointer" />
+                <div className="bg-[#F1F1F1] rounded-full p-3 ">
+                <FiShoppingCart className="w-4 h-4 relative text-gray-800 cursor-pointer" />
+                 <TbNumber0 className="w-3 h-3 absolute text-white bg-red-500 rounded-full top-1 right-1 cursor-pointer"/>
+              </div>
               </div>
             </div>
             <button
+            onClick={() => setOpen(!open)}
               data-collapse-toggle="navbar-search"
               type="button"
-              className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden 
+              className="inline-flex z-30 items-center p-2 text-sm text-gray-500 rounded-lg md:hidden 
               hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 
               dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-search"
@@ -166,8 +174,52 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
+            
           </div>
         </div>
+        {open && (
+        <div className="absolute top-0 inset-x-0 z-20 p-2 transition transform origin-top-right md:hidden">
+          <ul className="flex min-h-screen justify-center items-center flex-col p-4 md:p-0 mt-4 font-medium rounded-lg bg-[#FFFFFF] 
+          md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+            <li>
+              <Link
+                href="/female"
+                className="block py-2 pl-3 pr-4 text-gray-800  rounded md:bg-transparent md:p-0 "
+                aria-current="page"
+              >
+             Female
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/male"
+                className="block py-2 pl-3 pr-4 text-gray-800 rounded hover:bg-gray-100 
+                md:hover:bg-transparent  md:p-0  "
+              >
+                Male
+              </Link>
+            </li>
+            <li>
+              <a
+                href="/layout"
+                className="block py-2 pl-3 pr-4 text-gray-800 rounded hover:bg-gray-100 
+                md:hover:bg-transparent  md:p-0  "
+              >
+                Kids
+              </a>
+            </li>
+            <li>
+              <Link
+                href="/allproduct"
+                className="block py-2 pl-3 pr-4 text-gray-800 rounded hover:bg-gray-100 
+                md:hover:bg-transparent  md:p-0  "
+              >
+                All Products
+              </Link>
+            </li>
+          </ul>
+          </div>
+        )}
       </nav>
     
   );

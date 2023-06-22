@@ -40,12 +40,13 @@ export default function ProContent() {
             </div>
             <div className='w-full lg:w-6/12 flex'>
                 <div className='flex justify-center items-center gap-5 flex-wrap lg:flex-nowrap'>
-                    <div className='w-full'>
+                    <div className='w-full '>
                         <Image src="/images/featureunique.png" width={500} height={500} alt='uniqueimage'
                         className='w-full'/>
                     </div>
                     <div className='flex flex-col space-y-7'>
-                      <p className='text-gray-700 text-lg text-justify'>This piece is ethically crafted in our small 
+                      <p className='text-gray-700 text-lg text-justify'>
+                        This piece is ethically crafted in our small 
                       family-owned workshop in Peru with unmatched attention to detail and care. The Natural color 
                       is the actual natural color of the fiber, undyed and 100% traceable.</p>
                          <button className='bg-[#212121] text-white p-2 flex justify-center w-64 font-semibold'>See All Product</button>
